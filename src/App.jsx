@@ -38,8 +38,11 @@ export default function App() {
           Advice Of The Day
         </h1>
 
-        <p className="text-4xl md:text-6xl w-full md:w-[60%] mx-auto">
-          &rdquo; {advice} &rdquo;
+        <p
+          style={{ lineHeight: "1.4em" }}
+          className="text-4xl md:text-6xl w-full md:w-[60%] mx-auto"
+        >
+          {advice}
         </p>
 
         {error && <p className="text-red-500">{error}</p>}
